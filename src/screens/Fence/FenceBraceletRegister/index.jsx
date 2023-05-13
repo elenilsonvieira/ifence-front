@@ -1,6 +1,5 @@
 import Card from 'components/Card';
 import { Container } from 'components/Container';
-import GoBack from 'components/GoBack';
 import PageNotFound from 'components/PageNotFound';
 import { showErrorMessage } from 'components/Toastr';
 import { Component } from 'react';
@@ -123,7 +122,6 @@ class FenceBraceletRegister extends Component {
                     <Card title={this.state.fence.name}>
                         {this.state.bracelets.map(bracelet=>this.createBraceletRow(bracelet))}
                     </Card>
-                    <GoBack/>
                 </Container>
 
             </>
